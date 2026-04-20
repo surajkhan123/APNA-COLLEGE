@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 // package 23ArrayList;
 
@@ -10,11 +12,11 @@ public class ArrayList1 {
   ArrayList<Integer> a = new ArrayList<>();
 
     //add 
-  a.add(10); // O(1)
-  a.add(20);
-  a.add(30);
-  a.add(40);
-  a.add(50);
+  a.add(2); // O(1)
+  a.add(5);
+  a.add(9);
+  a.add(3);
+  a.add(6);
 
   System.out.println(a);
 
@@ -65,9 +67,17 @@ public class ArrayList1 {
   System.out.println("Maximum element: "+max);
 
   //swap
-  int idx1 =1, idx2 = 3;
+  int idx1 =0, idx2 = 2;
   swap(a, idx1,idx2);
   System.out.println("swapping: "+a);
+
+  //Sorting arraylist
+
+  Collections.sort(a);
+  System.out.println("Ascending Sorted order: "+a); //ascending order
+
+  Collections.sort(a, Collections.reverseOrder()); //descending order
+  System.out.println("Descending Sorted order: "+a);
 
   }
 
