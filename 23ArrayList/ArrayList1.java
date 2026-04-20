@@ -4,11 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayList1 {
 
-  public static void swap(ArrayList<Integer> a, int index1, int index2){
-    int temp = a.get(index1);
-    a.set(index1, a.get(index2));
-    a.set(index2, temp);
-  }
+  
   public static void main(String[] args) {
     
   ArrayList<Integer> a = new ArrayList<>();
@@ -68,14 +64,18 @@ public class ArrayList1 {
   }
   System.out.println("Maximum element: "+max);
 
+  //swap
+  int idx1 =1, idx2 = 3;
+  swap(a, idx1,idx2);
+  System.out.println("swapping: "+a);
+
   }
 
-  // //swap
-  // int id1 = 1, id2 = 3;
-  // System.out.println(a);
-  // swap(a,index1,index2);
-  // System.out.println(a);
+  public static void swap(ArrayList<Integer> a, int idx1, int idx2){
+    int temp = a.get(idx1);
+    a.set(idx1, a.get(idx2));
+    a.set(idx2, temp);
+  }
 
-
-
+ 
 }
