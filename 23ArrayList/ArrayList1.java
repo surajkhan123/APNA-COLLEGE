@@ -73,6 +73,8 @@ public class ArrayList1 {
 
   //Sorting arraylist
 
+  //comparator - fnx logic
+
   Collections.sort(a);
   System.out.println("Ascending Sorted order: "+a); //ascending order
 
